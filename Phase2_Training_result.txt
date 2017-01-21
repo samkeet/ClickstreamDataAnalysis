@@ -1,0 +1,170 @@
+
+PROGRESS: Random forest classifier:
+PROGRESS: --------------------------------------------------------
+PROGRESS: Number of examples          : 1635533
+PROGRESS: Number of classes           : 2
+PROGRESS: Number of feature columns   : 11
+PROGRESS: Number of unpacked features : 11
+PROGRESS: +-----------+--------------+-------------------+---------------------+
+
+PROGRESS: | Iteration | Elapsed Time | Training-accuracy | Validation-accuracy |
+
+PROGRESS: +-----------+--------------+-------------------+---------------------+
+
+PROGRESS: | 1         | 5.181209     | 0.771572          | 0.770864            |
+
+PROGRESS: | 2         | 6.554011     | 0.774176          | 0.773957            |
+
+PROGRESS: | 3         | 7.915615     | 0.773751          | 0.773654            |
+
+PROGRESS: | 4         | 9.241617     | 0.775454          | 0.775026            |
+
+PROGRESS: | 5         | 10.380419    | 0.77481           | 0.774608            |
+
+PROGRESS: | 6         | 11.628421    | 0.774723          | 0.77434             |
+
+PROGRESS: | 7         | 12.923224    | 0.774551          | 0.77334             |
+
+PROGRESS: | 8         | 14.264826    | 0.774516          | 0.774247            |
+
+PROGRESS: | 9         | 15.388028    | 0.774052          | 0.773561            |
+
+PROGRESS: | 10        | 16.636030    | 0.774241          | 0.773433            |
+
+PROGRESS: +-----------+--------------+-------------------+---------------------+
+
+{'f1_score': 0.7845310748536555, 'auc': 0.8579317062650549, 'recall': 0.78949677
+25762988, 'precision': 0.7796274521938239, 'log_loss': 0.4862700672300858, 'roc_
+curve': Columns:
+        threshold       float
+        fpr     float
+        tpr     float
+        p       int
+        n       int
+
+Rows: 100001
+
+Data:
++-----------+-----+-----+--------+--------+
+| threshold | fpr | tpr |   p    |   n    |
++-----------+-----+-----+--------+--------+
+|    0.0    | 1.0 | 1.0 | 223398 | 205984 |
+|   1e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   2e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   3e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   4e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   5e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   6e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   7e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   8e-05   | 1.0 | 1.0 | 223398 | 205984 |
+|   9e-05   | 1.0 | 1.0 | 223398 | 205984 |
++-----------+-----+-----+--------+--------+
+[100001 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns
+., 'confusion_matrix': Columns:
+        target_label    int
+        predicted_label int
+        count   int
+
+Rows: 4
+
+Data:
++--------------+-----------------+--------+
+| target_label | predicted_label | count  |
++--------------+-----------------+--------+
+|      1       |        0        | 47026  |
+|      0       |        0        | 156130 |
+|      0       |        1        | 49854  |
+|      1       |        1        | 176372 |
++--------------+-----------------+--------+
+[4 rows x 3 columns]
+, 'accuracy': 0.7743734017727805}
+[INFO] Stopping the server connection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROGRESS: SVM:
+PROGRESS: --------------------------------------------------------
+PROGRESS: Number of examples          : 1634722
+PROGRESS: Number of classes           : 2
+PROGRESS: Number of feature columns   : 9
+PROGRESS: Number of unpacked features : 9
+PROGRESS: Number of coefficients    : 10
+PROGRESS: Starting L-BFGS
+PROGRESS: --------------------------------------------------------
+PROGRESS: +-----------+----------+-----------+--------------+------------------
++---------------------+
+PROGRESS: | Iteration | Passes   | Step size | Elapsed Time | Training-accuracy
+| Validation-accuracy |
+PROGRESS: +-----------+----------+-----------+--------------+------------------
++---------------------+
+PROGRESS: | 1         | 5        | 0.000002  | 3.946807     | 0.523138
+| 0.520718            |
+PROGRESS: | 2         | 7        | 1.000000  | 5.227411     | 0.719737
+| 0.721133            |
+PROGRESS: | 3         | 8        | 1.000000  | 5.820212     | 0.697840
+| 0.697834            |
+PROGRESS: | 4         | 9        | 1.000000  | 6.397413     | 0.704250
+| 0.703798            |
+PROGRESS: | 5         | 10       | 1.000000  | 6.990214     | 0.712617
+| 0.712396            |
+PROGRESS: | 6         | 11       | 1.000000  | 7.567415     | 0.720335
+| 0.719463            |
+PROGRESS: | 10        | 16       | 1.000000  | 10.429220    | 0.752804
+| 0.752892            |
+PROGRESS: | 11        | 17       | 1.000000  | 11.037621    | 0.750782
+| 0.750548            |
+PROGRESS: | 15        | 21       | 1.000000  | 13.408825    | 0.746375
+| 0.747206            |
+PROGRESS: | 20        | 26       | 1.000000  | 16.544431    | 0.735891
+| 0.736578            |
+PROGRESS: | 25        | 31       | 1.000000  | 19.555236    | 0.735841
+| 0.736485            |
+PROGRESS: | 30        | 37       | 1.000000  | 22.987242    | 0.735821
+| 0.736427            |
+PROGRESS: | 35        | 42       | 1.000000  | 26.122848    | 0.735821
+| 0.736427            |
+PROGRESS: | 40        | 47       | 1.000000  | 29.024453    | 0.735816
+| 0.736427            |
+PROGRESS: | 45        | 54       | 0.500000  | 32.801060    | 0.735817
+| 0.736427            |
+PROGRESS: | 50        | 59       | 0.500000  | 35.921066    | 0.735817
+| 0.736427            |
+PROGRESS: +-----------+----------+-----------+--------------+------------------
++---------------------+
+PROGRESS: TERMINATED: Iteration limit reached.
+PROGRESS: This model may not be optimal. To improve it, consider increasing `ma
+_iterations`.
+{'f1_score': 0.7568888355424476, 'recall': 0.7904836095665333, 'confusion_matri
+': Columns:
+        target_label    int
+        predicted_label int
+        count   int
+
+Rows: 4
+
+Data:
++--------------+-----------------+--------+
+| target_label | predicted_label | count  |
++--------------+-----------------+--------+
+|      0       |        1        | 66626  |
+|      0       |        0        | 140034 |
+|      1       |        1        | 176564 |
+|      1       |        0        | 46798  |
++--------------+-----------------+--------+
+[4 rows x 3 columns]
+, 'precision': 0.7260331428101484, 'accuracy': 0.7362367506778723}
+[INFO] Stopping the server connection.
